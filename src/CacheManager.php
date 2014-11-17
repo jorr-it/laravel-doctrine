@@ -4,7 +4,7 @@ use Mitch\LaravelDoctrine\Cache\Provider;
 
 class CacheManager
 {
-    private $providers = [];
+    private $providers = array();
 
     public function __construct($config)
     {

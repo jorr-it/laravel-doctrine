@@ -10,7 +10,7 @@ class DriverMapper
 	 *
 	 * @var array
 	 */
-	private $mappers = [];
+	private $mappers = array();
 
 	/**
 	 * Register a new driver configuration mapper.

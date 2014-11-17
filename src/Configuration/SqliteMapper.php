@@ -10,11 +10,11 @@ class SqliteMapper implements Mapper
 	 */
 	public function map(array $configuration)
 	{
-		$sqliteConfig = [
+		$sqliteConfig = array(
 			'driver' => 'pdo_sqlite',
 			'user' => @$configuration['username'],
 			'password' => @$configuration['password']
-		];
+		);
 		$this->databaseLocation($configuration, $sqliteConfig);
 		return $sqliteConfig;
 	}
@@ -41,6 +41,6 @@ class SqliteMapper implements Mapper
 		if ($configuration['database'] == ':memory:')
 			$sqliteConfig['memory'] = true;
 		else
-			$sqliteConfig['path'] = $configuration['database'];
+			$sqliteConfig['path'] = app_path('database').'/'.$configuration['database'].'.sqlite';
 	}
-}
+} 

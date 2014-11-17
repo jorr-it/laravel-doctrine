@@ -10,14 +10,14 @@ class SqlMapper implements Mapper
 	 */
 	public function map(array $configuration)
 	{
-		return [
+		return array(
 			'driver' => $this->driver($configuration['driver']),
 			'host' => $configuration['host'],
 			'dbname' => $configuration['database'],
 			'user' => $configuration['username'],
 			'password' => $configuration['password'],
 			'charset' => $configuration['charset']
-		];
+		);
 	}
 
 	/**
@@ -28,7 +28,7 @@ class SqlMapper implements Mapper
 	 */
 	public function isAppropriateFor(array $configuration)
 	{
-		return in_array($configuration['driver'], ['sqlsrv', 'mysql', 'pgsql']);
+		return in_array($configuration['driver'], array('sqlsrv', 'mysql', 'pgsql')) ;
 	}
 
 	/**
@@ -39,7 +39,7 @@ class SqlMapper implements Mapper
 	 */
 	public function driver($l4Driver)
 	{
-		$doctrineDrivers = ['mysql' => 'pdo_mysql', 'sqlsrv' => 'pdo_sqlsrv', 'pgsql' => 'pdo_pgsql'];
+		$doctrineDrivers = array('mysql' => 'pdo_mysql', 'sqlsrv' => 'pdo_sqlsrv', 'pgsql' => 'pdo_pgsql');
 
 		return $doctrineDrivers[$l4Driver];
 	}

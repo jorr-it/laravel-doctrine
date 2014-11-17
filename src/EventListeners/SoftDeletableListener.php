@@ -21,9 +21,9 @@ class SoftDeletableListener
                 $entityManager->persist($entity);
 
                 $unitOfWork->propertyChanged($entity, 'deletedAt', $oldDeletedAt, $now);
-                $unitOfWork->scheduleExtraUpdate($entity, [
-                    'deletedAt' => [$oldDeletedAt, $now]
-                ]);
+                $unitOfWork->scheduleExtraUpdate($entity, array(
+                    'deletedAt' => array($oldDeletedAt, $now)
+                ));
             }
         }
     }

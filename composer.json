@@ -1,7 +1,7 @@
 {
     "name": "jorrit77/laravel-doctrine",
     "description": "The Doctrine 2 implementation that melts with Laravel 4 on PHP 5.3",
-    "version": "0.5.0",
+    "version": "0.5.1",
     "keywords": ["doctrine", "doctrine 2", "orm", "laravel"],
     "license": "MIT",
     "authors": [

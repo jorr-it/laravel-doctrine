@@ -53,7 +53,7 @@ class LaravelDoctrineServiceProvider extends ServiceProvider
      * The driver mapper's instance needs to be accessible from anywhere in the application,
      * for registering new mapping configurations or other storage libraries.
      */
-    private function registerConfigurationMapper()
+    private function registerConfigurationMapper() 
     {
         $this->app->bind('Mitch\LaravelDoctrine\Configuration\DriverMapper', function () {
             $mapper = new DriverMapper;

@@ -30,6 +30,7 @@ class SoftDeletableListener
 
     private function isSoftDeletable($entity)
     {
-        return array_key_exists('Mitch\LaravelDoctrine\Traits\SoftDeletes', class_uses($entity));
+        return false;
+		//return array_key_exists('Mitch\LaravelDoctrine\Traits\SoftDeletes', class_uses($entity));
     }
 }

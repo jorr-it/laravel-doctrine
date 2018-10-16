@@ -4,7 +4,10 @@ A Doctrine 2 implementation that melts with Laravel 4 on PHP 5.3.
 
 ## Documentation
 
-This is a fork of the excellent package v0.5.0 made by [Mitchell van Wijngaarden](https://github.com/mitchellvanw/laravel-doctrine) for an implementation with PHP versions 5.3 or 5.4. For newer versions of PHP, you should use the original package. Consider this an ugly downgrade only.
+This is a fork of package v0.5.0 made by [Mitchell van Wijngaarden](https://github.com/mitchellvanw/laravel-doctrine) for an implementation with PHP versions 5.3 or 5.4. Consider this an ugly downgrade only.
+
+- If you work with Laravel 4 on PHP 7, use: https://github.com/mitchellvanw/laravel-doctrine
+- If you work with Laravel 5 on PHP 7, use: https://github.com/laravel-doctrine/orm
 
 Things done:
 
